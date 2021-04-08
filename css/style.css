@@ -102,3 +102,27 @@ color: #fff;
   right: 0;
   bottom: -295px;
 }
+
+.services{
+  padding-top: 350px;
+}
+
+.title{
+  color: #21062A;
+  font-size: 36px;
+  line-height: 54px;
+  font-weight: 400px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.title::after{
+  content: '';
+  width: 80px;
+  height: 3px;
+  background-color: #21062A;
+  position: absolute;
+  top: 20px;
+  margin-left: 20px;
+}
