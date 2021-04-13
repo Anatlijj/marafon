@@ -396,13 +396,37 @@ a {
   font-family: 'Oswald', sans-serif;
 }
 
-.footer{
-  background-color: #21062A ;
+.footer {
+  background-color: #21062A;
 }
 
-.footer__inner{
+.footer__inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: #fff;
+}
+
+
+/* @media - CSS правило @media используется
+ для изменения CSS стилей на основании 
+ определенных характеристик устройства, 
+ связанных с отображением контента, 
+ таких как ширина, высота, ориентация, 
+ разрешение экрана и так далее.
+ ПИШЕТСЯ ВСЕГДА В КОНЦЕ CSS - ЭТО УДОБНО
+ По факту если обращаемся к примеру к тегу "body"
+ то запрос: 
+ @media (....) {
+   body {
+     .....
+   }
+ }   - ДОЛЛЖЕН БЫТЬ НИЖЕ ЕГО.
+ */
+
+
+@media (max-width: 1200px) {
+  body {
+    display: none;
+  }
 }
