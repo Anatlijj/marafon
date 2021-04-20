@@ -460,9 +460,24 @@ a {
 
   .header__social {
     padding: 30px 0 20px 0px;
+  }
+
+  .social {
+    justify-content: center;
+  }
 }
 
-.social{
-  justify-content: center;
-}
+@media (max-width: 520px) {
+  .header__top{
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+  .logo{
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .header__title{
+    
+  }
 }
