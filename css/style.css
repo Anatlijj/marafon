@@ -424,10 +424,40 @@ a {
  }   - ДОЛЛЖЕН БЫТЬ НИЖЕ ЕГО.
  */
 
+@media (max-width: 1140px) {
+  .services__item:hover {
+    width: 450px;
+  }
+}
 
 @media (max-width: 1024px) {
   .header__images {
     width: 80%;
+  }
+
+  .services {
+    padding-top: 250px;
+  }
+
+  .services__inner {
+    flex-wrap: wrap;
+    /* Чтобы контент переносился друг под друга при изменении размера экрана */
+  }
+
+  .services__list {
+    order: -1;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+  .services__item {
+    width: 100%;
+  }
+  .services__item:hover {
+    width: 100%;
+  }
+  .services__content{
+    width: 100%;
+     : 0;
   }
 }
 
@@ -465,19 +495,37 @@ a {
   .social {
     justify-content: center;
   }
+  .services{
+    padding-top: 150px;
+  }
 }
 
 @media (max-width: 520px) {
-  .header__top{
+  .header__top {
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
   }
-  .logo{
+
+  .logo {
     margin-bottom: 20px;
     width: 100%;
   }
-  .header__title{
-    
+
+  .header__title {
+    margin-bottom: 20px;
+  }
+
+  .header__images {
+    position: static;
+    width: 100%;
+
+  }
+}
+
+@media (max-width: 320px) {
+  .header__title {
+    font-size: 44px;
+    line-height: 50px;
   }
 }
