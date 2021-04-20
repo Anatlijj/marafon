@@ -15,7 +15,7 @@ body {
 a {
   text-decoration: none;
   color: inherit;
-  display: inlane-block;
+  display: inline-block;
 }
 
 .container {
@@ -128,7 +128,6 @@ a {
   position: absolute;
   top: 20px;
   margin-left: 20px;
-
 }
 
 .services__inner {
@@ -160,14 +159,13 @@ a {
 .button--decor {
   margin-top: -7px;
   color: #fff;
-  position: relative;
+  position: absolute;
 }
 
 .button--decor::after {
   content: 'ЖМИ';
   color: #C4C4C4;
   margin-left: 130px;
-  bottom: 15px;
   position: absolute;
 }
 
@@ -177,7 +175,7 @@ a {
   height: 2px;
   background-color: #C4C4C4;
   position: absolute;
-  right: -70px;
+  right: -65px;
   top: 24px;
 }
 
@@ -449,13 +447,16 @@ a {
     margin-bottom: 30px;
     width: 100%;
   }
+
   .services__item {
     width: 100%;
   }
+
   .services__item:hover {
     width: 100%;
   }
-  .services__content{
+
+  .services__content {
     width: 100%;
   }
 }
@@ -494,8 +495,24 @@ a {
   .social {
     justify-content: center;
   }
-  .services{
-        padding-top: 150px;
+
+  .services {
+    padding-top: 150px;
+  }
+
+  .title {
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 30px;
+  }
+
+  .body {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .services__item::before {
+    top: 10px;
   }
 }
 
@@ -518,11 +535,37 @@ a {
   .header__images {
     position: static;
     width: 100%;
+  }
 
+  .services {
+    padding-top: 50px;
+  }
+
+  .services__item{
+    padding: 10px 15px 10px 60px;
+  }
+
+  .services__item::before{
+    left: 11px;
+  }
+
+  .button--decor::before {
+    right: -50px;
+  }
+
+  .button--decor::after{
+    margin-left: 110px;
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 360px) {
+  .button--decor::before,
+  .button--decor::after{
+    display: none;
+  }
+}
+
+@media (max-width: 340px) {
   .header__title {
     font-size: 44px;
     line-height: 50px;
