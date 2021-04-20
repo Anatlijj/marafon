@@ -457,7 +457,6 @@ a {
   }
   .services__content{
     width: 100%;
-     : 0;
   }
 }
 
@@ -496,7 +495,7 @@ a {
     justify-content: center;
   }
   .services{
-    padding-top: 150px;
+        padding-top: 150px;
   }
 }
 
